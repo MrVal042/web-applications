@@ -1,0 +1,219 @@
+
+body{
+  margin: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /*make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/******* header, input and add item button container  **********/
+.inputContainer {
+  margin: 0;
+  padding: 1%;
+  background-color: seashell;
+}
+/* header  */
+h3 {
+  text-shadow: 1px 3px greenyellow;
+  margin: 1% 0 2%;
+}
+/* alert display */
+.alert{
+  width: 70%;
+  margin:auto;
+  height: 1.2rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  padding: 0 3%;
+}
+.alert-danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+}
+/* Add item button */
+.addBtn{
+  padding: 0.2% 1%;
+  font-size: 13pt;
+  border: 1px solid;
+  border-radius: 5px;
+}
+#addBtn:hover{
+  background-color: springgreen;
+}
+
+/******* Main container *******/
+.itemContainer{
+  padding: 1%;
+  margin-top: 0.1rem;
+  visibility: hidden;
+}
+.show-itemContainer{
+  visibility: visible;
+  display: grid;
+  margin-bottom: 100px;
+}
+/* article container */
+article{
+  width: 31%;
+  margin: 1%;
+  float: left;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+}
+/* done action (article)*/
+.doneA{
+  background: black;
+}
+/* article head text */
+h4 {
+  background-color: rgb(102, 50, 50);
+  color: white;
+  width: 92%;
+  margin-top: 0;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 1px 3px black;
+  text-align: left;
+  padding-left: 8%;
+}
+/* close an article btn*/
+.close{
+  width: 20%;
+  float: right;
+  text-align: center;
+  padding-left: 0;
+  text-shadow: none;
+  border-radius: 0 10px 0 0;
+}
+.close:hover{
+  background-color: red;
+  color: black;
+}
+/* text */
+blockquote{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 5pt;
+}
+/* When clicked on, add a background color  on page and strike out text*/
+.checked {
+  color: red;
+  text-decoration: line-through;
+  transform: rotate(360deg);
+}
+/*.... Add a "checked mark" when clicked on......*/
+.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+/* article buttons container*/
+.btnCon{
+  background-color: rgb(102, 50, 50);
+  border-radius: 0 0 10px 10px;
+}
+/* check button*/
+.checkBtn{
+  background-color: snow;
+  width: 4rem;
+  font-size: 8pt;
+  border-radius: 10px;
+}
+/* edit button*/
+.edit{
+  margin: 0;
+  padding: 0 4%;
+  border-radius: 7px 0 0 7px;
+  width: 2rem;
+}
+.edit:hover{
+  background: rgb(218, 32, 41);
+  color: #fff;
+}
+/* separator*/
+.slider{
+  position: relative;
+  background-color: aqua;
+  width: 2rem;
+  margin: 0;
+  border-radius: 7px;
+  text-emphasis: none;
+}
+/* done button*/
+.done{
+  width: 2rem;
+  margin: 0;
+  padding: 0 1.5%;
+  border-radius: 0 7px 7px 0;
+}
+.done:hover{
+  background: rgb(218, 32, 41);
+  color: #fff;
+}
+/******* clearAll button container********************/
+.clearAllCon{
+  text-transform: capitalize;
+  width: 100%;
+  bottom: 0;
+  margin: 5% o;
+  cursor: pointer;
+}
+/* clear all button*/
+.clearAllCon > button{
+  background-color: inherit;
+  color: rgb(216, 17, 17);
+  bottom: 7%;
+  width: 30%;
+  height: 25px;
+  border: none;
+}
+button:active {
+  background-color: red;
+}
+button:hover {
+  background-color: rgb(199, 6, 6);
+  color: whitesmoke;
+  border-radius: 5px;
+}
+/*.... footer container......*/
+footer{
+  background-color: black;
+  color: #ffff;
+  bottom: 0;
+  width: 99%;
+  padding: 1%;
+  font-size: 0.1rem;
+  text-align: center;
+  text-transform: capitalize;
+  position: fixed;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover{
+  color: gold;
+}
+/*** on only screen device *****/
+@media only screen and (max-width:500px){
+  article{ width: 47%; margin: 0 1% 4%};
+  #addBtn{padding: 0.5% 1%;font-size: 10pt};
+}
