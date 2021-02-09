@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>facebook by Val</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="headerCont">
+      <h3 id="appName">facebook</h3>
+      <nav>
+        <a href="#"><span style="margin-left: 0;">home</span></a>
+        <a href="#" ><span id="frndRequest">request</span></a>
+        <a href="#"><span>groups</span></a>
+        <a href="#"><span>profile</span></a>
+        <a href="#"><span style="margin-right: 0;">menu</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="parent">
+    <br><br>
+    <div class="mainCon"></div>
+    <!--profile pics-->
+    <div id="newsPCon" class="newsProfileCon">
+      <span class="proImgCont">
+        <img id="profileImg" src="../slide image/img/Val.jpg" alt="user pics">
+      </span>
+      <span>
+        <input type="text" id="txtInput" onclick="addNew()" placeholder="  What's on your mind?"></span>
+    </div><br>
+
+    <!--Creat a new post-->
+    <div id="createPost" style="display:none;">
+      <div>
+        <button id="back" onclick="document.getElementById('createPost').style.display='none'">←</button>
+        <span id="cPost"><strong>Create Post</strong</span> <button id="post" onclick="postInput()">Post</button>
+      </div>
+      <div>
+        <textarea name="" id="cPostInput" cols="30" rows="10" placeholder= "What's on your mind?"></textarea>
+      </div>
+      <div>
+        <input type="file" name="myFile" id="uploadImg">
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
