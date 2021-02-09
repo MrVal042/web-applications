@@ -1,0 +1,29 @@
+
+ div{
+  background-color: inherit;
+  margin: 15% 5%;
+  padding: 5%;
+  text-align: center;
+}
+h3 {
+  background-color: cyan;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 10px;
+}
+span{
+  background-color: aliceblue;
+  margin-left: auto;
+  padding: 0 5%;
+}
+button{
+  border-radius: 10px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  div{margin: 35% 5%;}
+  h3 {
+    background: linear-gradient(to right, cyan 77%, #ffffff 10%);
+  }
+}

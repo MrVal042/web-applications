@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STAR LAB WEB</title>
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<section>
+				<a onclick="sideBar()" id="menu">
+					<div id="menu_icon"></div>
+					<div id="menu_icon"></div>
+					<div id="menu_icon"></div>
+				</a>
+			</section>
+			<section id="nav">
+				<div id="nav">
+					<a href="./index.html">Home</a>
+					<a onclick="LogF()">Log In</a>
+					<a href="./about.html">About</a>
+				</div>
+			</section>
+		</nav>
+	</header>
+
+	<!--.............................-->
+	<main>
+		<!--side bar-->
+		<aside id="leftMenu" style="display: none;">
+			<a href="#about"><span>about us</span></a>
+			<a href="#services"><span>services</span></a>
+			<a href="#sciences"><span>sciences</span></a>
+			<a href="#contact"><span>contact us</span></a>
+			<a href="#lab test"><span>lab test</span></a>
+			<a href="#lab result"><span>lab results</span></a>
+		</aside>
+
+		<aside id="rightMenu">
+			<span>
+				<h4>about us</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.</p>
+			</span>
+			<span>
+				<h4>about us</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.</p>
+			</span>
+			<span>
+				<h4>about us</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.</p>
+			</span>
+			<span>
+				<h4>about us</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.</p>
+			</span>
+			<span>
+				<p>Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.</p>
+			</span>
+		</aside>
+
+		<article id="id01">
+			<!---log in modal-->
+			<div>
+				<form id="login" style="display: none;" action="#">
+					<span id="extbtn" onclick="extBtn()">x</span>
+					<div class="userIcon"></div>
+					Username: <input type="text" name="Username" onfocus="1"><br><br>
+					password: <input type="password" name="password"><br><br>
+					<a onclick="userSwitch()">Forgotten password</a>
+					<a onclick="userSwitch()">Sign Up</a><br><br>
+					<input type="submit" value="submit">
+				</form>
+			</div>
+
+			<!--sign up modal-->
+			<div>
+				<form id="signUp" style="display:none" action="#">
+					<span id="extbtn" onclick="extBtn()">x</span>
+					<div class="userIcon">
+
+					</div>
+					<div>
+						<input type="text" id="a" name="fname" placeholder="Enter first name">
+						<input type="text" id="x" placeholder="Enter Last name">
+					</div>
+					<div>
+						<input type="number" placeholder="Enter phone number">
+						<input type="email" id="b" placeholder="Enter Email">
+					</div>
+					<div>
+						<input type="password" placeholder="Create password">
+						<input type="password" id="d" placeholder="Confirm password">
+					</div>
+					<div>
+						<label>Gender:</label>
+						| Male<input type="radio" name="gender">
+						| Female<input type="radio" name="gender">
+					</div>
+					<div><label for="Age">
+							Select your Age
+						</label>
+						<select" id="Age" name="Age">
+							<select>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="49">48</option>
+								<option value="48">49</option>
+								<option value="50">50</option>
+							</select>
+
+							<label for="National">
+								National
+							</label>
+							<select id="National" name="National">
+								<option value="ang">Angentina</option>
+								<option value="bia">Biafra</option>
+								<option value="ca">Canada</option>
+								<option value="du">Dubai</option>
+								<option value="Ng">Nigeria</option>
+								<option value="Gh">Ghana</option>
+								<option value="Br">Brasil</option>
+								<option value="Bt">British</option>
+								<option value="Cr">Cameroon</option>
+							</select>
+					</div><br>
+
+					<a onclick="userSwitch()" id="a">Log in</a>
+					<a href="./index.html" target="blank">
+						<input type="submit" value="submit">
+					</a>
+				</form>
+			</div>
+			<!--lab Name -->
+			<div class="lab_name">
+				<section>
+					<h1>STAR LABORATORY</h1>
+					<p><br><strong>The first scientific Oracle in modern medicine</strong>
+
+				</section>
+			</div>
+
+			<!-- About div-->
+			<div id="about"></div><br>
+			<div>
+				<h2 class="h2">About Us</h2>
+				<img id="circle" src="./images/sky.jpg">
+				<p>
+					<blockquote>
+						<strong>Star laboratory</strong>,<i> The first scientific oracle in modern
+							medicine.</i> we can do all things through Christ who strenghten us.
+						we are a special group of professionals in medical laboratory practice,
+						who have come together to examine, investigate and ascertain your .....
+						<a href="./About.html">Read more</a></blockquote><br>
+				</p>
+				<div id="services"></div><br>
+				<a href="./Services.html">
+					<h2 class="h2">Services
+					</h2>
+				</a>
+				<img id="circle" src="./images/Lab.jpg">
+				<p>We offer the followings servives:-
+					<ol>
+						<li>laboratory test</li>
+						<li>Hospital reagents</li>
+						<li>Laboratory reagents </li>
+						<li>Laboratory Equipments</li>
+						<li>Infertility test</li>
+						<li>Screenings</li>
+						<li>Special Chemistry</li>
+						<li>Virginity test</li>
+						<li>Molicular Diagnosis</li>
+						<li>Counseling</li>
+						<li>....<a href="./Services.html">Read more</a></li>
+					</ol>
+				</p>
+				<!--science update-->
+
+				<div id="sciences"></div><br>
+				<a href="">
+					<h2 class="h2">Science Updates</h2>
+				</a>
+				<Img id="oval2" src="./images/Updates.jpg">
+				<p>
+					<strong>Cirrhosis causes chronic liver</strong>
+					Cirrhosis is the formation of fibrous tissue
+					( fibrosis )in the place of liver cells that have died due
+					to a variety of causes,including viral hepatitis, alcohol
+					overconsumption, and other forms of liver toxicity.....
+					<a href="./index.html">Read more</a>
+				</p>
+				<p>
+					<blockquote>
+						Hepatitis is inflammation of the liver, is caused by various
+						viruses ( viral hepatitis ) also by some liver toxins
+						(e.g. alcoholic hepatitis ),autoimmunity
+						( autoimmune hepatitis ) or hereditary conditions.....
+						<a href="./index.html">Read more</a>
+					</blockquote>
+				</p>
+				<p>
+					<blockquote>
+						People we meet or exchanged contacts with in bar joints ends up
+						not calling nor never missed your call..?
+						does it means that they didn't enjoy the drink or
+						they are not ready to speed more money?.....
+						<a href="./index.html">Read more</a>
+
+						<p>health status, refers, treat and advise you on ways to regain and
+							have a good health. we also offer counseling in health and emotional
+							related issues. r that you serve and help you to discover,
+							recover and enjoy good health, emotional related issues.
+							we are second to none,our results and servives speaks for us.
+					</blockquote>
+				</p>
+		</article>
+		<div>
+			<p><a href="#" id="top">back to top ↑</a></p>
+		</div>
+	</main>
+
+	<footer id="contact"> &copy 2018 - 2020 StarLab.Com<br>
+		<hr>
+		<a onclick="document.getElementById('shw').style.display=''">Contacts | <a href="#services">Services</a> |
+			Terms | Privacy
+			<br>
+			<hr>
+			<div id="shw" style="display: none;"> contact us <a
+					href="https://m.facebook.com/story.php?story_fbid=1645107355663498&id=100004927487683">
+					@ facebook </a>
+				<a href="https://twitter.com/ThisInspiresUs/status/1292526091438043142?s=19">@twitter </a>
+				<a href="https://www.instagram.com/p/CEVmY8pBwAr/?igshid=fsb61oelo46d">@instagram</a></footer>
+	</div>
+	<script src="./scripts/main.js"></script>
+</body>
+</html>

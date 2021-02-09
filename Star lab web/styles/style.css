@@ -1,0 +1,338 @@
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  .text {font-size: 11px}
+  #rightMenu{display: none}
+  #leftMenu{display: none;}
+  article{width: 100%;
+    margin:auto;
+  }
+}
+
+body {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+/* Header */
+header nav {
+  background: black;
+  width: 100%;
+  margin: auto;
+  border-bottom: #e8491d 3px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+header #menu {
+  text-align: vertical;
+  float: left;
+  margin: 0px 0px 0px 10px
+}
+
+header #nav {
+  color: gold;
+  text-align: horizontal;
+  float: right;
+  font-size: 13pt;
+  margin: 5px 5px 0px 0px;
+}
+
+header #menu_icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 2px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0px 0px 0px 5px;
+}
+
+header a active {
+  color: yellow;
+  font-weight: bold;
+}
+
+header current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: gold;
+  font-weight: bold;
+}
+main{
+  width: 100%;
+  height: auto;
+  margin: 37px 0 0 0;
+}
+article{
+  width: 79.999%;
+  height: auto;
+  margin-right: 0 20% 0 0;
+}
+#leftMenu {
+  width: 10%;
+  height: auto;
+  padding: 1px;
+  position: fixed;
+  opacity: 1;
+}
+#leftMenu a{
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#rightMenu {
+  width: 19.9999%;
+  height: auto;
+  right: 0;
+  font-size: 12pt;
+  position: fixed;
+}
+
+span{
+  background-color: #c0b8b3;
+  width: 95.99%;
+  margin: 2px 1px;
+  padding: 2px 0x;
+  float: left;
+}
+span:hover{
+  background-color: #e06c1f;
+  color: snow;
+}
+.lab_name {
+  background: url('../images/tv.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  color:snow;
+  font-size: 14px;
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  border-radius: 5px / 100px;
+  border-bottom: blue 3px solid;
+}
+
+.lab_name h1 {
+  color: rgb(68, 0, 255);
+}
+
+ol {
+  list-style-type: none;
+}
+
+/* Service frame */
+ul.a {
+  list-style-type: square;
+}
+
+div a ul {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0px 0px 0px 5px;
+}
+
+list a active {
+  color: yellow;
+  font-weight: bold;
+}
+
+list .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+list a:hover {
+  color: gold;
+  font-weight: bold;
+}
+
+form {
+  background: url('../images/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 2px;
+  padding: auto;
+  text-align: auto;
+  color: #ffffff;
+}
+
+form a {
+  font-size: 12px;
+  text-align: auto;
+  color: #ffffff;
+}
+
+form a:hover {
+  text-align: auto;
+  color: #e06c1f;
+}
+
+.userIcon {
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 80px;
+  margin: 2% 40%;
+  background-color: skyblue;
+  border-radius: 50%;
+
+}
+
+#login {
+  width: 50%;
+  height: auto;
+  margin: 15% 22% 0;
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.97;
+}
+
+#signUp {
+  width: 50%;
+  height: auto;
+  margin: 15% 22% 0;
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.97;
+}
+
+#extbtn {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin: 10px;
+  width: 30px;
+  color: #665c59;
+}
+#extbtn:hover{
+  background-color: #e8491d;
+  color: whitesmoke;
+}
+
+#note {
+  background: #35424a;
+  color: #ffffff;
+  padding: 10px;
+  min-height: 50px;
+  border-bottom: #e8491d 3px solid;
+}
+
+.h1 {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.h2 {
+  width: 99%;
+  background-color: brown;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px / 50px;
+}
+
+.h2a #a {
+  background-color: brown;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
+
+
+#top {
+  text-decoration: none;
+  color: red;
+  position: fixed;
+  right: 5%;
+  bottom: 1%;
+  margin: 15px 10px 0;
+}
+
+ul #sacked li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+ol #ask li {
+  list-style: none;
+  padding: 20px;
+  border: none;
+  background: #e6e6e6;
+}
+
+#circle {
+  width: 200px;
+  height: 200px;
+  background: gray;
+  border-radius: 50%
+}
+
+/*#oval {
+    width: 97%;
+    height: auto;
+    background: silver;
+    text-align: auto;
+    padding-top: 20px;
+    border-radius: 50px / 100px;
+  }*/
+#oval2 {
+  width: 97%;
+  height: 100px;
+  background: black;
+  border-radius: 100px / 100px;
+}
+
+footer {
+  width: 100%;
+  background: url('../images/logo.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  font-size: 12px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 0px 0px 0px 5px;
+}
+
+footer a active {
+  color: yellow;
+  font-weight: bold;
+}
+
+footer.current a {
+  color: #e8491d;
+}
+
+footer a:hover {
+  color: gold;
+}
+

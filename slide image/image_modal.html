@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <style>  
+  * {box-sizing: border-box;}
+    .imageCard {
+      display:inline-block;
+      width: 23.99999%;
+      height: 250px;
+      margin: 10px 4px;
+      padding: 1px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+      z-index: -3;
+    }
+
+    .imgConF {
+      width: 99%;
+      height: 180px;
+      margin: 2px 1px;
+      padding: 0;
+      -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+      transition: width 2s, height 2s, transform 2s;
+      position:static;
+      z-index: -1;
+    }
+    .imgConF > img{
+      width: 99%;
+      height: 175px;
+      margin: 2px 1px;
+      -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+      transition: width 1s, height 1s, transform 1s;
+      position:static;
+      z-index: -1;
+    }
+    
+    .imgConF > img:hover{
+      width: 450px;
+      height: 400px;
+      -webkit-transform: zoom(); /* Safari */
+      transform: zoom();
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      }
+
+    .coptContainer {
+      width: 99%;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      margin: 2px 1px;
+      padding: 1px;
+      z-index: -1;
+    }
+    .coptContainer > p {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 80.9999%;
+      height: 40px;
+      margin: 10px 10.9999%;
+      padding: 1px 5%;
+      text-align: center;
+      text-transform: capitalize;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    @media only screen and (max-width: 700px){
+      .imageCard {
+        width: 31.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px){
+      .imageCard {
+        width: 99.9999%;
+      }
+    }
+    .clearfix::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Responsive image Gallery</h2>
+  </div>
+  <div class="imageCard">
+    <div class="imgConF">
+      <img src="./img/Shaggy.jpg" alt="picture of shappy center rug">
+    </div>
+    <div class="coptContainer">
+      <p>shappy center rug</p>
+    </div>
+  </div>
+  <div class="imageCard">
+    <div class="imgConF">
+      <img src="./img/Shaggy.jpg" alt="picture of shappy center rug">
+    </div>
+    <div class="coptContainer">
+      <p>shappy center rug</p>
+    </div>
+  </div>
+  <div class="imageCard">
+    <div class="imgConF">
+      <img src="./img/Shaggy.jpg" alt="picture of shappy center rug">
+    </div>
+    <div class="coptContainer">
+      <p>shappy center rug</p>
+    </div>
+  </div>
+  <div class="imageCard">
+    <div class="imgConF">
+      <img src="./img/Shaggy.jpg" alt="picture of shappy center rug">
+    </div>
+    <div class="coptContainer">
+      <p>shappy center rug</p>
+    </div>
+  </div>
+
+    <div class="container">
+      <p>January 1, 2021</p>
+    </div>
+</div>
+  <div class="clearfix"></div>
+  <div style="padding: 6px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+       veniam quod numquam odit nam officiis maxime assumenda blanditiis doloremque
+       ima maiores, porro ab. Sunt rerum distinctio,
+       sint quos fugiat dolorum!</p>
+  </div>
+</body>
+</html>

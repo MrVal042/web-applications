@@ -1,0 +1,109 @@
+body {
+  background-color: whitesmoke;
+  font-size: 15pt;
+}
+
+header nav {
+  background: black;
+  text-align: horizontal;
+  float: left;
+  width: 100%;
+  border-bottom: #e8491d 3px solid;
+}
+
+header #menu {
+  text-align: vertical;
+  float: left;
+  margin: 0px 0px 0px 10px
+}
+
+header #nav {
+  color: gold;
+  text-align: horizontal;
+  float: right;
+  font-size: 13pt;
+  margin: 5px 3px 0px 0px;
+}
+
+header #menu_icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 2px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0px 0px 0px 5px;
+}
+
+header a active {
+  color: yellow;
+  font-weight: bold;
+}
+
+header.current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: gold;
+  font-weight: bold;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%
+}
+#oval {
+  width: 200px;
+  height: 100px;
+  background: red;
+  border-radius: 100px / 50px;
+}
+
+#text {
+  display: none;
+}
+
+.btn-container {
+  margin: auto;
+  height: 44px;
+  width: 166.23px;
+
+}
+
+a:active {
+  color: #ffd323;
+}
+
+body {
+  background-color: black;
+}
+
+button {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: white;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', monospace;
+  font-size: 20px;
+  color: white;
+}
