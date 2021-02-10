@@ -17,21 +17,19 @@ let count = 0;
 // **** CREATE AND ADD FOOTER ************************************* 
 const footelement = document.createElement('div');
 const year = new Date().getFullYear()
-footelement.innerHTML = ` Mr Val 042 &copy ${year} <a href="https://github.com/MrVal042"> www.mrval042.Com</a><br>
-		<hr>
-		<a href="#">Contacts</a> | <a href="#">Services</a> |
-    <a href="#">Terms</a> | <a href="#">Privacy</a>
-			<br>
-			<hr>
-			<div><a
-					href="https://m.facebook.com/story.php?story_fbid=1645107355663498&id=100004927487683">
-					@ facebook </a>
-				<a href="https://twitter.com/ThisInspiresUs/status/1292526091438043142?s=19">@twitter </a>
-				<a href="https://www.instagram.com/p/CEVmY8pBwAr/?igshid=fsb61oelo46d">@instagram</a>
-      </div>`;
-  // append child element to the parant element........
-  footertxt.appendChild(footelement);
-
+footelement.innerHTML = ` Mr Val 042 &copy ${year} 
+<a href="https://github.com/MrVal042"> www.mrval042.Com</a><br>
+  <hr>
+    <a href="#">Contacts</a> | <a href="#">Services</a> |
+    <a href="#">Terms</a> | <a href="#">Privacy</a><br>
+ <hr>
+ <div>
+    <a href="https://m.facebook.com/story.php?story_fbid=1645107355663498&id=100004927487683">@ facebook </a>
+    <a href="https://twitter.com/ThisInspiresUs/status/1292526091438043142?s=19">@twitter </a>
+    <a href="https://www.instagram.com/p/CEVmY8pBwAr/?igshid=fsb61oelo46d">@instagram</a>
+ </div>`;
+// append child element to the parant element........
+footertxt.appendChild(footelement);
 // **** ADD GLOBAL LISTENER  **************************************** 
 // add items...........
 addbtn.addEventListener('click', addItems);
@@ -60,33 +58,33 @@ function addItems() {
     // add html element to created element....
     element.innerHTML = `
       <h4 class="head">Note${count}<span class="close">x</span></h4>
-      <blockquote class="content">
-      <p>${value}</p>
-      </blockquote>
+        <blockquote class="content">
+          <p>${value}</p>
+        </blockquote>
       <div class="btnCon">
-      <span class="checkBtn">
+        <span class="checkBtn">
         <span class="edit ">Edit</span>
         <span class="done  ">Done</span>
       </span>
       </div> `;
-    // select the created element for events..........
-    const deleteBtn = element.querySelector('.close');
-    const editBtn = element.querySelector('.edit');
-    // add event listener to the created element..........
-    const doneBtn = element.querySelector('.done');
-    deleteBtn.addEventListener('click', deleteItem);
-    editBtn.addEventListener('click', editItem);
-    doneBtn.addEventListener('click', doneItem);
-    // append child element to the parant element........
-    list.appendChild(element);
-    // display alert............
-    displayAlert("items added successfully..", "success");
-    // show item container...............
-    itemCont.classList.add("show-itemContainer");
-    // add to local storage................
-    addToLocalStorage(id, value);
-    // set back to default...............
-    setBackToDefault();
+   // select the created element for events..........
+   const deleteBtn = element.querySelector('.close');
+   const editBtn = element.querySelector('.edit');
+   // add event listener to the created element..........
+   const doneBtn = element.querySelector('.done');
+   deleteBtn.addEventListener('click', deleteItem);
+   editBtn.addEventListener('click', editItem);
+   doneBtn.addEventListener('click', doneItem);
+   // append child element to the parant element........
+   list.appendChild(element);
+   // display alert............
+   displayAlert("items added successfully..", "success");
+   // show item container...............
+   itemCont.classList.add("show-itemContainer");
+   // add to local storage................
+   addToLocalStorage(id, value);
+   // set back to default...............
+   setBackToDefault();
   }
   // check if input value = true & edit btn = true...........
   else if (value && editFlag) {
